@@ -1,0 +1,93 @@
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  /* border: 2px solid red; */
+  font-family: arial;
+  font-size: 16px;
+  background-color: rgb(24, 1, 66);
+  border-radius: 20px;
+  color: aliceblue;
+}
+h2 {
+  text-align: center;
+}
+.container div {
+  text-align: center;
+}
+input {
+  width: 250px;
+  padding: 5px;
+}
+button {
+  width: 70px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: rgb(142, 177, 16);
+  border: none;
+  color: rgb(213, 240, 182);
+  border-radius: 10px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.decorative-container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.decorative-container h1,
+.decorative-container p,
+.decorative-container form {
+  position: relative;
+  z-index: 2;
+}
+
+.decorative-container input,
+.decorative-container button {
+  padding: 0.6em 1em;
+  margin: 0.5em 0.3em;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.decorative-container button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.decorative-container::before {
+  content: "Hirono Hirono Hirono Hirono Hirono Hirono";
+  position: absolute;
+  top: -20%;
+  left: -30%;
+  width: 200%;
+  height: 200%;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.05);
+  transform: rotate(-30deg);
+  line-height: 3;
+  white-space: pre-wrap;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
